@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="shortcut icon" href="/assests/Graphicloads-Colorful-Long-Shadow-Cart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Shop - Cart Store </title>
+</head>
+<body>
+    <div class="container">
+         <div class="header">
+            <div class="logo float-left width-25">
+                <h1><a href="/index.html" id="logo"><span>Cart</span></a><span>Store</span></h1>
+            </div>
+            <div class="searchbar float-left width-50">
+                <input type="text" placeholder="Search for Products">
+                <button><a href="#"id="search"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+            </div>
+            <div class="cartbuttonarea float-left width-25">
+                <button class="commonbtn"><span class="cartbuttons"><a href="#" id="star"><i class="fa-solid fa-star"></i></a></span></button>
+                <button class="commonbtn"><span class="cartbuttons"><a href="/cart.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a></span></button>
+            </div>
+         </div>
+    </div>
+  <div class="firstbannercontainer">
+    <div class="sort-option">
+        <select name="Rate Box" id="rate-box">
+            <option value="1">Sort</option>
+            <option value="2">By Rating</option>
+            <option value="3">By Latest Arrival</option>
+            <option value="4">By Cheap Price</option>
+            <option value="5">By Name</option>
+        </select>
+    </div>
+    <div class="shop-header">
+        <h1>Women Dress List</h1>
+        <h3>---Our Collection---</h3> 
+    </div>
+    <div class="container bannerleft">
+        <div class="width-25 float-left">
+            <h3>Price</h3>
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="price-all">
+                <label for="price-all" class="custom-control-label">All Products</label>
+                <span class="filter-prod-count">1000</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="0-300">
+                <label for="0-300" class="custom-control-label"><i class="fa-solid fa-indian-rupee-sign"></i>0-<i
+                        class="fa-solid fa-indian-rupee-sign"></i>300</label>
+                <span class="filter-prod-count">500</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="350-500">
+                <label for="350-500" class="custom-control-label"><i class="fa-solid fa-indian-rupee-sign"></i>350-<i
+                        class="fa-solid fa-indian-rupee-sign"></i>500</label>
+                <span class="filter-prod-count">100</span>
+            </div>
+           
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="600-1000">
+                <label for="600-1000" class="custom-control-label"><i class="fa-solid fa-indian-rupee-sign"></i>600-<i
+                        class="fa-solid fa-indian-rupee-sign"></i>1000</label>
+                <span class="filter-prod-count">200</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="1500-2000">
+                <label for="1500-2000" class="custom-control-label"><i class="fa-solid fa-indian-rupee-sign"></i>1500-<i
+                        class="fa-solid fa-indian-rupee-sign"></i>2000</label>
+                <span class="filter-prod-count">100</span>
+            </div>   
+
+                <h3>Size</h3>
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked="" id="all">
+                    <label for="all" class="custom-control-label">All Products</label>
+                    <span class="filter-prod-count">1000</span>
+                </div>
+            
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked="" id="small">
+                    <label for="small" class="custom-control-label">Small</label>
+                    <span class="filter-prod-count">500</span>
+                </div>
+            
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked="" id="medium">
+                    <label for="medium" class="custom-control-label">Medium</label>
+                    <span class="filter-prod-count">100</span>
+                </div>
+            
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked="" id="large">
+                    <label for="large" class="custom-control-label">Large</label>
+                    <span class="filter-prod-count">200</span>
+                </div>
+            
+                <div class="custom-control-check">
+                    <input type="checkbox" class="custom-control-input" checked="" id="extralarge">
+                    <label for="extralarge" class="custom-control-label">Extra Large</label>
+                    <span class="filter-prod-count">100</span>
+                </div>
+            <h3>Color</h3>
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="sob">
+                <label for="sob" class="custom-control-label">All Products</label>
+                <span class="filter-prod-count">1000</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="red">
+                <label for="red" class="custom-control-label">Red</label>
+                <span class="filter-prod-count">500</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="blue">
+                <label for="blue" class="custom-control-label">Blue</label>
+                <span class="filter-prod-count">100</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="black">
+                <label for="black" class="custom-control-label">Black</label>
+                <span class="filter-prod-count">200</span>
+            </div>
+            
+            <div class="custom-control-check">
+                <input type="checkbox" class="custom-control-input" checked="" id="white">
+                <label for="white" class="custom-control-label">White</label>
+                <span class="filter-prod-count">100</span>
+            </div>
+        </div>
+        <div class="width-75 float-left">
+        <div class="width-33 float-left">
+            <div class="cart">
+                <div>
+                    <img src="/assests/most-visited-1.jpg" alt="women casual dress">
+                </div>
+                <div class="cart-details">
+                    <h6 class="name-head">Women's Casual Dress</h6>
+                    <div class="cart-price">
+                        <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                        <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="width-33 float-left">
+                <div class="cart">
+                    <div>
+                        <img src="/assests/most-visited-1.jpg" alt="">
+                    </div>
+                    <div class="cart-details">
+                        <h6 class="name-head">Women's Casual Dress</h6>
+                        <div class="cart-price">
+                            <h6 class="current"><i class="fa-solid fa-indian-rupee-sign"></i>1000</h6>
+                            <h6 class="previous"><i class="fa-solid fa-indian-rupee-sign"></i>1500</h6>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <a href="#"><i class="fa-solid fa-eye"></i>View Details</a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="container bannerleft">
+            <div class="footer">
+                <div class="width-25 float-left margin-5">
+                    <div class="logo">
+                        <h1><a href="/index.html" id="logo"><span>Cart</span></a><span>Store</span></h1>
+                    </div>
+                    <p class="footer-desc">
+                       This is an E-Commerce Website made by Siddharth Chatterjee
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-map-location-dot icon"></i> 61/29,Sheikh Para Lane, Howrah-711103</li>
+                        <li><i class="fa-brands fa-mailchimp icon"></i> Post Office :- Olabibitola</li>
+                        <li><i class="fa-solid fa-envelope icon"></i> Mail:- <a href="#" id="mail">chsiddharth856@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone icon"></i> 8910240848</li>
+                    </ul>
+                </div>
+                <div class="width-25 quick-links float-left">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <li><a href="/index.html"><i class="fa-sharp fa-solid fa-angle-right"></i>Home</a></li>
+                        <li><a href="/shop.html"><i class="fa-sharp fa-solid fa-angle-right"></i>Shop</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Product Details</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Contact</a></li>
+                        <li><a href="/login.html"><i class="fa-sharp fa-solid fa-angle-right"></i>Login</a></li>
+                        <li><a href="/register.html"><i class="fa-sharp fa-solid fa-angle-right"></i>Register</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Categories</a></li>
+                     </ul>
+                </div>
+                <div class="width-25 quick-links float-left">
+                    <h3>Categories Section Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Shirts</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>T-Shirts</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Pants</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Trouser</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Jacket</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Inner-Wear</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Socks</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Shoes</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Jeans</a></li>
+                        <li><a href="#"><i class="fa-sharp fa-solid fa-angle-right"></i>Shorts</a></li>
+                    </ul>
+                </div>
+                <div class="width-25 float-left sub">
+                      <h3>News Letter</h3>
+                      <input type="text" placeholder="Enter Your Name" class="footer-input">
+                      <input type="text" placeholder="Enter Your Email"class="footer-input">
+                      <button class="footer-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div>
+                &copy <b>SIDDHARTH CHATTERJEE</b>. All Rights Reservered. Designed by <b>Siddharth Chatterjee</b>.
+            </div>
+            <a href="#"><i class="fa-brands fa-paypal icon1"></i></a>
+            <a href="#"><i class="fa-brands fa-google-pay icon1"></i></a>
+            <a href="#"><i class="fa-brands fa-apple-pay icon1"></i></a>
+            <a href="#"><i class="fa-brands fa-amazon-pay icon1"></i></a>
+        </div>
+    </div>
+</body>
+</html>
